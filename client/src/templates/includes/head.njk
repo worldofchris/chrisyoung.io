@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{ title }} - Focus Theme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '../' if folder }}assets/css/theme.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '../' if folder }}assets/img/icon.png" type="image/png">
+
+    {%- if folder === "docs" %}
+    <!-- Prism (only for docs) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css">
+    {% endif %}
+
+    <!-- JS -->
+    <script src="{{ '../' if folder }}assets/js/theme.js" defer></script>
+
+    {%- if folder === "docs" %}
+    <!-- Prism (only for docs) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" defer></script>
+    {% endif %}
+</head>
+
+<body>

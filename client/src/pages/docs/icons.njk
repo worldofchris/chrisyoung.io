@@ -1,0 +1,34 @@
+{% extends "layouts/docs.njk" %}
+{% set folder = "docs" %}
+{% set page = "icons" %}
+{% set title = "Icons" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'docs')}}
+<h1>Icons</h1>
+<p class="lead">Focus uses Material Icons, a collection of beautifully crafted symbols for common actions and items.</p>
+
+<p>You can change the icon size using <code>.icon-{size}</code></p>
+
+<div class="mb-4">
+    <i class="material-icons">photo_camera</i>
+    <i class="material-icons icon-lg">photo_camera</i>
+    <i class="material-icons icon-2x">photo_camera</i>
+    <i class="material-icons icon-3x">photo_camera</i>
+    <i class="material-icons icon-5x">photo_camera</i>
+</div>
+
+<pre class="mb-4">
+    <code class="lang-html">
+        &lt;i class="material-icons">photo_camera&lt;/i&gt;
+        &lt;i class="material-icons icon-lg"&gt;photo_camera&lt;/i&gt;
+        &lt;i class="material-icons icon-2x"&gt;photo_camera&lt;/i&gt;
+        &lt;i class="material-icons icon-3x"&gt;photo_camera&lt;/i&gt;
+        &lt;i class="material-icons icon-5x"&gt;photo_camera&lt;/i&gt;
+    </code>
+</pre>
+
+<p>
+    <a href="https://material.io/resources/icons/" target="_blank" rel="noopener">See all available icons <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>
+{% endblock %}

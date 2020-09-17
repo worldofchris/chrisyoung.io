@@ -1,0 +1,21 @@
+{% extends "layouts/docs.njk" %}
+{% set folder = "docs" %}
+{% set page = "zoom" %}
+{% set title = "Zoom" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'docs')}}
+<h1>Zoom</h1>
+<p>The <a href="https://github.com/spinningarrow/zoom-vanilla.js" target="_blank" rel="noopener">zoom plugin</a> provides simple image zoom functionality. Add a <code>data-action="zoom"</code> attribute to any image you want to make zoomable. Zoomed images can be closed by scroll, <em>esc</em>, or click.</p>
+
+<div class="mb-4" style="max-width: 400px">
+    <img src="../assets/img/red-tree.jpg" alt="Maple leaf" class="img-fluid" data-action="zoom">
+</div>
+<pre class="mb-4">
+    <code class="lang-html">
+        &lt;div style="max-width: 300px"&gt;
+            &lt;img src="assets/img/red-tree.jpg" alt="..." data-action="zoom" class="img-fluid"&gt;
+        &lt;/div&gt;
+    </code>
+</pre>
+{% endblock %}

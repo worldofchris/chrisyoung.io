@@ -1,0 +1,30 @@
+{% extends "layouts/docs.njk" %}
+{% set folder = "docs" %}
+{% set page = "updating" %}
+{% set title = "Updating" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'docs')}}
+<h1>Updating</h1>
+<p class="lead">How to update your theme.</p>
+
+<p>When the theme is updated, you will be notified by the Bootstrap Themes platform with a link to download the latest version.</p>
+
+<p>It's recommended to review the <a href="changelog.html">changelog</a> for the update to see if there are any changes to HTML structure or the classes used in the CSS that you need to account for.</p>
+
+<p>Depending on your customization method, there are two strategies for updating: using the compiled files or using the source files.</p>
+
+<h2>Updating compiled files</h2>
+
+<p>To update the compiled files replace the old CSS and JS files with the newer versions. </p>
+
+<p>All these files are in the <code>dist/assets</code> folder of the theme.</p>
+
+<h2>Updating source files</h2>
+
+<p>If you are working with the SCSS files you should replace all the files in <code>src/assets/scss</code> (excepting <code>_user-vars.scss</code> and <code>_users.scss</code> that contain your changes) and then compile the theme using the build tools.</p>
+
+<p>Notice that if you use the build tools included with the theme, JS files are included automatically to the <code>dist</code> folder. If you use your own tools remember to update those files too.</p>
+
+<p>If you’re really struggling with an update, don’t hesitate to reach out to the theme's support.</p>
+{% endblock %}

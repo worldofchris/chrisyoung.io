@@ -1,0 +1,73 @@
+{% include "includes/head.njk" -%}
+<div class="container">
+    <div class="row py-4 py-lg-5">
+        <div class="col-lg-3">
+            <nav class="navbar navbar-expand-lg navbar-dark side-nav sticky-top mt-2" aria-label="Docs navigation">
+                <a class="collapsed btn-block d-lg-none btn btn-outline-white p-3 mb-4 text-center" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarDocs" aria-label="Docs navigation">Navigation</a>
+
+                <div class="collapse navbar-collapse" id="navbarDocs">
+
+                    <dl class="navbar-nav flex-column">
+                        <dt class="text-uppercase mb-2">Getting Started</dt>
+                        <dd>
+                            <a href="index.html" {{ 'class=active' if page == 'introduction' }}>Introduction</a>
+                        </dd>
+                        <dd>
+                            <a href="changelog.html" {{ 'class=active' if page == 'changelog' }}>Changelog</a>
+                        </dd>
+                        <dd>
+                            <a href="customization.html" {{ 'class=active' if page == 'customization' }}>Customization</a>
+                        </dd>
+                        <dd>
+                            <a href="updating.html" {{ 'class=active' if page == 'updating' }}>Updating</a>
+                        </dd>
+
+                        <dt class="text-uppercase mt-3 mb-2">Components</dt>
+                        <dd>
+                            <a href="avatars.html" {{ 'class=active' if page == 'avatars' }}>Avatars</a>
+                        </dd>
+                        <dd>
+                            <a href="buttons.html" {{ 'class=active' if page == 'buttons' }}>Buttons</a>
+                        </dd>
+                        <dd>
+                            <a href="carousel.html" {{ 'class=active' if page == 'carousel' }}>Carousel</a>
+                        </dd>
+                        <dd>
+                            <a href="forms.html" {{ 'class=active' if page == 'forms' }}>Forms</a>
+                        </dd>
+                        <dd>
+                            <a href="icons.html" {{ 'class=active' if page == 'icons' }}>Icons</a>
+                        </dd>
+                        <dd>
+                            <a href="images.html" {{ 'class=active' if page == 'images' }}>Images</a>
+                        </dd>
+                        <dd>
+                            <a href="navbar.html" {{ 'class=active' if page == 'navbar' }}>Navbar</a>
+                        </dd>
+                        <dd>
+                            <a href="pagination.html" {{ 'class=active' if page == 'pagination' }}>Pagination</a>
+                        </dd>
+
+                        <dt class="text-uppercase mt-3 mb-2">Utilities</dt>
+                        <dd>
+                            <a href="borders.html" {{ 'class=active' if page == 'borders' }}>Borders</a>
+                        </dd>
+                        <dd>
+                            <a href="text.html" {{ 'class=active' if page == 'text' }}>Text</a>
+                        </dd>
+
+                        <dt class="text-uppercase mt-3 mb-2">Plugins</dt>
+                        <dd>
+                            <a href="zoom.html" {{ 'class=active' if page == 'zoom' }}>Zoom</a>
+                        </dd>
+                    </dl>
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg-9">
+            <main id="main">
+                {% block content %} {% endblock -%}
+            </main>
+        </div>
+    </div>
+</div>

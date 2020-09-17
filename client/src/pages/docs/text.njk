@@ -1,0 +1,23 @@
+{% extends "layouts/docs.njk" %}
+{% set folder = "docs" %}
+{% set page = "text" %}
+{% set title = "Text" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'docs')}}
+<h1>Text</h1>
+<p class="lead">Documentation and examples for text utilities.</p>
+<h2>Font family</h2>
+<p>Easily change the font family using <code>.font-serif</code> or <code>.font-sans-serif</code>.</p>
+<p class="h5 font-sans-serif">Font Sans Serif</p>
+<p class="font-serif mb-4">Font Serif</p>
+<pre class="mb-4">
+    <code class="lang-html">
+    &lt;p class="h5 font-sans-serif"&gt;Font Sans Serif&lt;/p&gt;
+    &lt;p class="font-serif"&gt;Font Serif&lt;/p&gt;
+    </code>
+</pre>
+<p>
+    <a href="https://getbootstrap.com/docs/4.4/utilities/text/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>
+{% endblock %}

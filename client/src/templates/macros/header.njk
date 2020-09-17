@@ -1,0 +1,28 @@
+{% macro nav(bgColor, borderColor, navbarColor, activePage) %}
+<header class="site-header fixed-top {{bgColor}} border-bottom {{borderColor}}">
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar main-nav navbar-expand-lg {{navbarColor}}" aria-label="Main navigation">
+            <a href="{{ '../' if activePage == 'docs' }}index.html" class="navbar-brand d-inline-flex text-uppercase">~</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="{{ '../' if activePage == 'docs' }}pages.html" class="nav-link{%if activePage == 'pages' %} active{% endif %}">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ '../' if activePage == 'docs' }}style.html" class="nav-link{%if activePage == 'style' %} active{% endif %}">Style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ '../' if activePage == 'docs' }}docs/index.html" class="nav-link{%if activePage == 'docs' %} active{% endif %}">Docs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+{% endmacro %}

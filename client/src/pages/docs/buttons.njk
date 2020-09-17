@@ -1,0 +1,83 @@
+{% extends "layouts/docs.njk" %}
+{% set folder = "docs" %}
+{% set page = "buttons" %}
+{% set title = "Buttons" %}
+{% block content -%}
+{% import 'macros/header.njk' as header -%}
+{{header.nav('bg-black', 'border-dark', 'navbar-dark', 'docs')}}
+<h1>Buttons</h1>
+<p class="lead">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes and states.</p>
+
+<div class="my-4">
+    <button type="button" class="btn btn-primary mb-2">Primary</button>
+    <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+    <button type="button" class="btn btn-success mb-2">Success</button>
+    <button type="button" class="btn btn-danger mb-2">Danger</button>
+    <button type="button" class="btn btn-warning mb-2">Warning</button>
+    <button type="button" class="btn btn-info mb-2">Info</button>
+    <button type="button" class="btn btn-light mb-2">Light</button>
+    <button type="button" class="btn btn-dark mb-2">Dark</button>
+</div>
+<pre class="mb-5">
+    <code class="lang-html">
+        &lt;button type="button" class="btn btn-primary">Primary&lt;/button&gt;
+        &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+        &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+        &lt;button type="button" class="btn btn-danger">Danger&lt;/button&gt;
+        &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+        &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+        &lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;
+        &lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;
+    </code>
+</pre>
+
+<h2>Outline buttons</h2>
+<p>Replace the default modifier classes with the .btn-outline-* ones to remove all background images and colors on any button.</p>
+
+<div class="my-4">
+    <button type="button" class="btn btn-outline-primary mb-2">Primary</button>
+    <button type="button" class="btn btn-outline-secondary mb-2">Secondary</button>
+    <button type="button" class="btn btn-outline-success mb-2">Success</button>
+    <button type="button" class="btn btn-outline-danger mb-2">Danger</button>
+    <button type="button" class="btn btn-outline-warning mb-2">Warning</button>
+    <button type="button" class="btn btn-outline-info mb-2">Info</button>
+    <button type="button" class="btn btn-outline-light mb-2">Light</button>
+</div>
+<pre class="mb-5">
+    <code class="lang-html py-3">
+        &lt;button type="button" class="btn btn-outline-primary">Primary&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline-danger">Danger&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline-info"&gt;Info&lt;/button&gt;
+        &lt;button type="button" class="btn btn-outline-light"&gt;Light&lt;/button&gt;
+    </code>
+</pre>
+
+<h2>Sizes</h2>
+<p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
+
+<button type="button" class="btn btn-primary btn-lg mb-3">Large button</button>
+<button type="button" class="btn btn-light btn-lg mb-3">Large button</button>
+<pre class="mb-5">
+    <code class="lang-html py-3">
+        &lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+        &lt;button type="button" class="btn btn-light btn-lg"&gt;Large button&lt;/button&gt;
+    </code>
+</pre>
+
+<button type="button" class="btn btn-primary btn-sm mb-3">Small button</button>
+<button type="button" class="btn btn-light btn-sm mb-3">Small button</button>
+<pre class="mb-4">
+    <code class="lang-html py-3">
+        &lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;
+        &lt;button type="button" class="btn btn-light btn-sm"&gt;Small button&lt;/button&gt;
+    </code>
+</pre>
+
+<p>
+    <a href="https://getbootstrap.com/docs/4.4/components/buttons/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>
+
+{% endblock %}

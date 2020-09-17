@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Forms - Focus Theme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/icon.png" type="image/png">
+    <!-- Prism (only for docs) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-okaidia.min.css">
+    
+
+    <!-- JS -->
+    <script src="../assets/js/theme.js" defer></script>
+    <!-- Prism (only for docs) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" defer></script>
+    
+</head>
+
+<body>
+<div class="container">
+    <div class="row py-4 py-lg-5">
+        <div class="col-lg-3">
+            <nav class="navbar navbar-expand-lg navbar-dark side-nav sticky-top mt-2" aria-label="Docs navigation">
+                <a class="collapsed btn-block d-lg-none btn btn-outline-white p-3 mb-4 text-center" href="#collapseOne" data-toggle="collapse" data-target="#navbarDocs" aria-expanded="false" aria-controls="navbarDocs" aria-label="Docs navigation">Navigation</a>
+
+                <div class="collapse navbar-collapse" id="navbarDocs">
+
+                    <dl class="navbar-nav flex-column">
+                        <dt class="text-uppercase mb-2">Getting Started</dt>
+                        <dd>
+                            <a href="index.html" >Introduction</a>
+                        </dd>
+                        <dd>
+                            <a href="changelog.html" >Changelog</a>
+                        </dd>
+                        <dd>
+                            <a href="customization.html" >Customization</a>
+                        </dd>
+                        <dd>
+                            <a href="updating.html" >Updating</a>
+                        </dd>
+
+                        <dt class="text-uppercase mt-3 mb-2">Components</dt>
+                        <dd>
+                            <a href="avatars.html" >Avatars</a>
+                        </dd>
+                        <dd>
+                            <a href="buttons.html" >Buttons</a>
+                        </dd>
+                        <dd>
+                            <a href="carousel.html" >Carousel</a>
+                        </dd>
+                        <dd>
+                            <a href="forms.html" class=active>Forms</a>
+                        </dd>
+                        <dd>
+                            <a href="icons.html" >Icons</a>
+                        </dd>
+                        <dd>
+                            <a href="images.html" >Images</a>
+                        </dd>
+                        <dd>
+                            <a href="navbar.html" >Navbar</a>
+                        </dd>
+                        <dd>
+                            <a href="pagination.html" >Pagination</a>
+                        </dd>
+
+                        <dt class="text-uppercase mt-3 mb-2">Utilities</dt>
+                        <dd>
+                            <a href="borders.html" >Borders</a>
+                        </dd>
+                        <dd>
+                            <a href="text.html" >Text</a>
+                        </dd>
+
+                        <dt class="text-uppercase mt-3 mb-2">Plugins</dt>
+                        <dd>
+                            <a href="zoom.html" >Zoom</a>
+                        </dd>
+                    </dl>
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg-9">
+            <main id="main">
+                
+<header class="site-header fixed-top bg-black border-bottom border-dark">
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar main-nav navbar-expand-lg navbar-dark" aria-label="Main navigation">
+            <a href="../index.html" class="navbar-brand d-inline-flex text-uppercase">~</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../pages.html" class="nav-link">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../style.html" class="nav-link">Style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../docs/index.html" class="nav-link active">Docs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1>Forms</h1>
+<p class="lead">Examples of form control styles.</p>
+
+<form class="mb-4">
+    <div class="form-row align-items-center">
+        <div class="col-md-4">
+            <label class="sr-only" for="inputName">First name</label>
+            <input type="text" class="form-control border-0 font-italic mb-3" id="inputName" placeholder="First Name">
+        </div>
+        <div class="col-md-4">
+            <label class="sr-only" for="inputEmail">Email address</label>
+            <input type="email" class="form-control border-0 font-italic mb-3" id="inputEmail" placeholder="Email Address">
+        </div>
+        <div class="col-md-auto">
+            <button type="submit" class="btn btn-primary mb-3">Sign Up</button>
+        </div>
+    </div>
+</form>
+
+<pre class="mb-5">
+    <code class="lang-html">
+        &lt;form&gt;
+            &lt;div class="form-row align-items-center"&gt;
+                &lt;div class="col-md-4"&gt;
+                    &lt;label class="sr-only" for="inputName"&gt;First name&lt;/label&gt;
+                    &lt;input type="text" class="form-control border-0 font-italic mb-3" id="inputName" placeholder="First Name"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-4"&gt;
+                    &lt;label class="sr-only" for="inputEmail"&gt;Email address&lt;/label&gt;
+                    &lt;input type="email" class="form-control border-0 font-italic mb-3" id="inputEmail" placeholder="Email Address"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-auto"&gt;
+                    &lt;button type="submit" class="btn btn-primary mb-3"&gt;Sign Up&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    </code>
+</pre>
+
+<h2>Sizing</h2>
+<p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+
+<input class="form-control form-control-lg border-0 mb-3" type="text" placeholder="form-control-lg">
+<input class="form-control border-0 mb-3" type="text" placeholder="Default input">
+<input class="form-control form-control-sm border-0 mb-4" type="text" placeholder="form-control-sm">
+
+<pre class="mb-4">
+    <code class="lang-html py-3">
+        &lt;input class="form-control form-control-lg border-0" type="text" placeholder="form-control-lg"&gt;
+        &lt;input class="form-control border-0" type="text" placeholder="Default input"&gt;
+        &lt;input class="form-control form-control-sm border-0" type="text" placeholder="form-control-sm"&gt;
+    </code>
+</pre>
+
+<p>
+    <a href="https://getbootstrap.com/docs/4.4/components/forms/" target="_blank" rel="noopener">Bootstrap Documentation <i class="material-icons align-middle" aria-hidden="true">launch</i></a>
+</p>
+</main>
+        </div>
+    </div>
+</div>
