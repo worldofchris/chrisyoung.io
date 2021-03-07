@@ -1,5 +1,5 @@
 {% extends "layouts/default.njk" %}
-{% set title = "Home" %}
+{% set title = "home" %}
 {% block content -%}
 {% import 'macros/header.njk' as header -%}
 {{header.nav('bg-black', 'border-dark', 'navbar-dark', 'home')}}
@@ -7,69 +7,74 @@
 
         <!-- Hero -->
         <div class="container py-5">
-            <h1 class="display-2 pb-2"><span style="color: #00ff00">chris</span>young.io</h1>
+            <h1 class="display-2 pb-2"><span style="color: #43b3d3">Chris Young</span></h1>
             <hr class="border-3 border-white my-4 ml-0 text-left w-25" role="presentation">
             <div class="row">
                 <div class="col-lg-8">
                     <p class="font-serif lead mb-4 text-secondary">
-                    On the tools engagement for your tech project.
+                    Full life cycle coaching, consultancy and code for technology and management teams.
                     </p>
                 </div>
             </div>
-            <a href="https://themes.getbootstrap.com/product/focus/" class="btn btn-primary">Contact</a>
+            <a href="contact.html" class="btn btn-primary">Contact</a>
         </div>
 
         <!-- Projects -->
         <div class="container py-4">
             <ul class="row list-unstyled">
+
                 <li class="col-md-6 mb-3">
-                    <a href="portfolio-1.html">
                         <figure>
-                            <figcaption class="h5 font-weight-normal text-center">DevOps</figcaption>
-                            <div class="img-overlay mb-3">
-                                <img src="assets/img/devops.png" alt="DevOps" class="img-thumbnail">
-                                <div class="img-hover">
-                                    <p class="img-text">View Page</p>
+                            <a href="strategy-and-planning.html">
+                                <figcaption class="h5 font-weight-normal text-center">Strategy and Planning</figcaption>
+                            </a>
+                            <a href="software-development.html">
+                                <div class="img-overlay mb-3">
+                                    <img src="assets/img/consultancy.png" alt="Starting with why and going from there" class="img-thumbnail">
                                 </div>
-                            </div>
+                            </a>
+                        </figure>
+                </li>
+
+                <li class="col-md-6 mb-3">
+                        <figure>
+                            <a href="software-development.html">
+                                <figcaption class="h5 font-weight-normal text-center">Software Development</figcaption>
+                            </a>
+                            <a href="software-development.html">
+                                <div class="img-overlay mb-3">
+                                    <img src="assets/img/leanagile.png" alt="Lean/Agile methods, TDD, BDD" class="img-thumbnail">
+                                    <div class="img-hover">
+                                        <p class="img-text">View Page</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                </li>
+
+                <li class="col-md-6 mb-3">
+                        <figure>
+                            <a href=operations-and-infrastructure.html">
+                                <figcaption class="h5 font-weight-normal text-center">Operations and Infrastructure</figcaption>
+                            </a>
+                            <a href=operations-and-infrastructure.html">
+                                <div class="img-overlay mb-3">
+                                    <img src="assets/img/devops.png" alt="Infrastructure as Code, Observability, Metrics" class="img-thumbnail">
+                                    <div class="img-hover">
+                                        <p class="img-text">View Page</p>
+                                    </div>
+                               </div>
+                            </a>
                         </figure>
                     </a>
                 </li>
 
                 <li class="col-md-6 mb-3">
-                    <a href="portfolio-2.html">
+                    <a href="speaking-and-writing.html">
                         <figure>
-                            <figcaption class="h5 font-weight-normal text-center">Lean/Agile</figcaption>
+                            <figcaption class="h5 font-weight-normal text-center">Speaking and Writing</figcaption>
                             <div class="img-overlay mb-3">
-                                <img src="assets/img/leanagile.png" alt="Lean/Agile" class="img-thumbnail">
-                                <div class="img-hover">
-                                    <p class="img-text">View Page</p>
-                                </div>
-                            </div>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="col-md-6 mb-3">
-                    <a href="portfolio-3.html">
-                        <figure>
-                            <figcaption class="h5 font-weight-normal text-center">Consultancy</figcaption>
-                            <div class="img-overlay mb-3">
-                                <img src="assets/img/consultancy.png" alt="Consultancy" class="img-thumbnail">
-                                <div class="img-hover">
-                                    <p class="img-text">View Page</p>
-                                </div>
-                            </div>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="col-md-6 mb-3">
-                    <a href="portfolio-4.html">
-                        <figure>
-                            <figcaption class="h5 font-weight-normal text-center">Computing History</figcaption>
-                            <div class="img-overlay mb-3">
-                                <img src="assets/img/arpanet.png" alt="Computing History" class="img-thumbnail">
+                                <img src="assets/img/storytelling.jpg" alt="Storytelling" class="img-thumbnail">
                                 <div class="img-hover">
                                     <div class="img-text">View Page</div>
                                 </div>
@@ -82,49 +87,47 @@
 
         <!-- Testimonials -->
         <div class="bg-white text-black">
-            <div class="container py-6">
-                <h2 class="h3 text-center mb-5">More Blurb</h2>
-                <p>From bedroom coder to Start Up CTO
-                </p>
-<!--                 <div class="row">
+            <div class="container py-3">
+                <h2 class="text-center">About Me</h2>
+                <div class="row">
                     <div class="col-md">
                         <blockquote class="text-center mb-5 mb-sm-0">
-                            <img src="assets/img/tim-schoch.jpg" class="avatar avatar-lg mb-3" alt="Tim Schoch">
-                            <cite class="d-block h5 mb-1">Matthew Skelton</cite>
-                            <span class="small text-muted text-uppercase">Conflux Digital</span>
-                            <p class="quote text-muted mt-3 mb-0">He wrote half a book...eventually</p>
-                        </blockquote>
-                    </div>
-                    <div class="col-md">
-                        <blockquote class="text-center mb-5 mb-md-0">
-                            <img src="assets/img/olive-mathews.jpg" class="avatar avatar-lg mb-3" alt="Olive Mathews">
-                            <cite class="d-block h5 mb-1">Olive Mathews</cite>
-                            <span class="small text-muted text-uppercase">Photographer</span>
-                            <p class="quote text-muted mt-3 mb-0">Focus is great. I will refer everyone I know. This theme is worth much more than I paid. I'm loving it.</p>
-                        </blockquote>
-                    </div>
-
-                    <div class="col-md">
-                        <blockquote class="text-center">
-                            <img src="assets/img/malan-alankara.jpg" class="avatar avatar-lg mb-3" alt="Malan Alankara">
-                            <cite class="d-block h5 mb-1">Malan Alankara</cite>
-                            <span class="small text-muted text-uppercase">Architect</span>
-                            <p class="quote text-muted mt-3 mb-0">Not able to tell you how happy I am with Focus. It's exactly what I've been looking for.</p>
+                            <img src="assets/img/headshot-small.jpg" class="avatar avatar-lg mb-3" alt="Chris Young">
                         </blockquote>
                     </div>
                 </div>
- -->            </div>
+                <p>
+                   A hands on technology lead, I have been working in tech since the mid nineties. I have led in house teams,
+                   co-ordinated cross organisation teams and managed outsourced work. A practitioner of Specification by
+                   Example, I use this to help create a shared understanding of requirements. I use Lean and Agile methods
+                   to enable effective software delivery. As an AWS Certified Solutions Architect (Associate) I work on
+                   cloud infrastructure and operations. Across the complete software development lifecycle I use metrics
+                   and visualisations to help teams work together and align their outcomes with the needs of the business.
+                </p>
+                <p>
+                   My background includes working at BBC and ITV an on projects for Echostar in the USA and Deutsche Telekom in Germany.
+                   I was CTO at Homeycomb TV and since then has been working with start ups, advising on strategy, coaching their
+                   developers and helping them build out testing, development, operations and infrastructure.
+                </p>
+                <p>
+                   Working with engineering and management teams my aim is to get the best results possible for all involved.
+                </p>
+                <p>
+                   I have spoken at conferences in the UK and Europe including Agile Cambridge, QCon and GOTO Berlin.
+                   Together with <a href="https://www.linkedin.com/in/mattiabattiston/">Mattia Battiston</a> I am the co-author
+                   of the book <a href="https://bizmetricsbook.com">Team Guide to Metrics for Business Decisions</a>.
+                </p>
+            </div>
         </div>
 
         <!-- Call to action -->
         <div class="bg-primary text-dark text-center">
-            <div class="container py-6">
-                <h2 class="font-sans-serif">You like?</h2>
-                <p class="lead mb-4">I write code...for you!</p>
-                <a href="https://themes.getbootstrap.com/product/focus/" class="btn btn-outline-dark">Contact</a>
+            <div class="container py-3">
+                <h2 class="font-sans-serif">Get in touch</h2>
+                <a href="contact.html" class="btn btn-outline-dark">Contact</a>
             </div>
         </div>
     </main>
     {% import 'macros/footer.njk' as footer -%}
-    {{footer.footer('bg-white', 'text-dark')}}
+    {{footer.footer('bg-black')}}
 {% endblock %}
