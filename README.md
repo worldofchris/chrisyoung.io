@@ -53,6 +53,7 @@ gcloud services enable secretmanager.googleapis.com
 gcloud services enable sourcerepo.googleapis.com
 gcloud services enable iam.googleapis.com 
 gcloud services enable dns.googleapis.com
+gcloud services enable compute.googleapis.com
 ```
 
 ### Configure the Google Terraform Provider

@@ -21,6 +21,10 @@
 
     <!-- JS -->
     <script src="assets/js/theme.js" defer></script>
+
+    <meta property="og:title" content="Chris Young" />
+    <meta property="og:description" content="Full life cycle coaching, consultancy and code." />
+    <meta property="og:image" content="assets/img/og.png" />
 </head>
 <body>
 
@@ -30,7 +34,7 @@
 
         <!-- Navbar -->
         <nav class="navbar main-nav navbar-expand-lg navbar-dark" aria-label="Main navigation">
-            <a href="index.html" class="navbar-brand d-inline-flex text-uppercase">~</a>
+            <a href="index.html" class="nav-item d-inline-flex text-uppercase">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,9 +54,12 @@
         <div class="container py-6">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h1 class="display-4 mb-4">Contact us</h1>
+                    <h1 class="display-4 mb-4">Contact me</h1>
                     <hr class="border-1 border-light my-4 ml-0 text-left w-15" role="presentation">
-                    <p class="lead text-secondary">Ask us anything, or share your feedback.</p>
+                    <p class="lead text-secondary">
+                    Send a message via the form below and I'll get back to you.
+                    Alternatively you can book a Zoom meeting with me via <a href="https://calendly.com/chrisyoung-io/30min"> Calendly</a>
+                    .</p>
                 </div>
             </div>
         </div>
@@ -63,22 +70,18 @@
                     <div class="row justify-content-center py-4 py-lg-5">
                         <div class="col-md-10 col-lg-8">
                             <p>Fields marked with an <span class="text-primary">*</span> are required.</p>
-                            <form class="py-4">
+                            <form class="py-4" action="https://formspree.io/f/xnqoeabo" method="POST">
                                 <div class="form-group">
                                     <label for="inputName">Name <span class="text-primary">*</span></label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                                    <input name="name" type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputEmail">Email <span class="text-primary">*</span></label>
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
+                                    <input name="_replyto" type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="messageTetxarea">Message <span class="text-primary">*</span></label>
-                                    <textarea class="form-control" id="messageTetxarea" rows="9" placeholder="Enter your message" required></textarea>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="inputCheck">
-                                    <label class="form-check-label small" for="inputCheck">I agree with the <a href="#">terms and conditions</a> </label>
+                                    <textarea name="message" class="form-control" id="messageTetxarea" rows="9" placeholder="Enter your message" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-pill btn-primary">Submit</button>
                             </form>
@@ -89,16 +92,17 @@
         </div>
     </main>
 
-    <footer class="bg-light text-black">
+    <footer class="bg-black ">
         <div class="container py-5 py-md-3">
             <div class="row justify-content-md-between">
                 <div class="col-4 col-md-2">
                     <h2 class="h6">Web</h2>
                     <ul class="nav flex-column">
-                        <li class="mb-1"><a href="#" class="text-muted">Medium</a></li>
-                        <li class="mb-1"><a href="#" class="text-muted">GitHub</a></li>
-                        <li class="mb-1"><a href="#" class="text-muted">SpeakerDeck</a></li>
-                        <li class="mb-1"><a href="#" class="text-muted">LinkedIn</a></li>
+                        <li class="mb-1"><a href="https://worldofchris.medium.com/" class="text-muted">Medium</a></li>
+                        <li class="mb-1"><a href="https://github.com/worldofchris/" class="text-muted">GitHub</a></li>
+                        <li class="mb-1"><a href="https://speakerdeck.com/worldofchris/" class="text-muted">SpeakerDeck</a></li>
+                        <li class="mb-1"><a href="https://www.linkedin.com/in/worldofchris/" class="text-muted">LinkedIn</a></li>
+                        <li class="mb-1"><a href="https://stackoverflow.com/users/1064619/chris-young" class="text-muted">StackOverflow</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-4 mt-4 mt-md-0">
